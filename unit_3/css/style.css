@@ -1,0 +1,23 @@
+* {
+	padding:0;
+	margin:0;
+}
+
+body {
+  text-align: center;
+  background: url("http://wallup.net/wp-content/uploads/2016/05/25/242484-glitch_art.png");
+  background-size: cover;
+  color: purple;
+  font-family: Helvetica;
+}
+
+header {
+	background: aqua;
+	padding: 30px;
+}
+
+a { 
+	color: purple;
+	font-weight: bold;
+	text-decoration: none;
+}
