@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Expletus+Sans');
+
+* {
+	padding:0;
+	margin:0;
+}
+
+body {
+  text-align: center;
+  color: black;
+  font-family: Helvetica;
+  margin: 0 auto;
+}
+
+
+#main-logo {
+	max-width: 400px;
+}
+
+#home {
+	background-image: url("http://wallup.net/wp-content/uploads/2016/05/25/242484-glitch_art.png");
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#port-bg {
+	background-image: url("https://static.pexels.com/photos/2855/landscape-mountains-nature-lake.jpg");
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#about-bg {
+	background-image: url(../images/IMG_BG_GalaxyGlitch.jpg)
+}
+
+header {
+	background-color: #FFED74;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+nav a {
+	font-family: 'Expletus Sans', cursive;
+	text-transform: uppercase;
+	font-size: 2em;
+	color: gold;
+	background-color: #E8C66A;
+}
+
+a { 
+	color: black;
+	font-size: 2em;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+ul {
+	text-align: left;
+	padding: 20px 20px;
+}
+
+section {
+	background-color: #FFC675;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+article {
+	background-color: #E89C6C;
+    border: 1px black solid;
+    padding: 20px;
+    width: 700px
+}
+
+aside {
+	background-color: #FFE2B8;
+    border: 1px black solid;
+    padding: 20px;
+    width: 700px;
+}
+
+footer {
+	background-color: #FF957E;
+    border: 1px black solid;
+    padding: 20px;
+}
