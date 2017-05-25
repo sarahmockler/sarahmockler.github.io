@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Expletus+Sans');
+
+* {
+	padding:0;
+	margin:0;
+}
+
+body {
+  text-align: center;
+  color: black;
+  font-family: Helvetica;
+  margin: 0 auto;
+}
+
+
+#main-logo {
+	max-width: 25%;
+	float: left;
+	padding-left: 30px;
+}
+
+#top-nav {
+	max-width: 40%;
+	float: right;
+}
+
+#home {
+	background-image: url("http://wallup.net/wp-content/uploads/2016/05/25/242484-glitch_art.png");
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#port-bg {
+	background-image: url("https://static.pexels.com/photos/2855/landscape-mountains-nature-lake.jpg");
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#about-bg {
+	background-image: url(../images/IMG_BG_GalaxyGlitch.jpg)
+}
+
+header {
+	/*background-color: #FFED74;*/
+    /*border: 1px black solid;*/
+    padding: 20px;
+}
+
+nav a {
+	font-family: 'Expletus Sans', cursive;
+	text-transform: uppercase;
+	font-size: 2em;
+	color: white;
+	padding: 15px;
+}
+
+a:hover {
+	background-color: magenta;
+}
+
+a { 
+	color: black;
+	font-size: 2em;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+
+img {
+	max-width: 300px;
+}
+
+ul {
+	text-align: left;
+	padding: 20px 20px;
+}
+
+section {
+	background-color: #FFC675;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+article {
+	background-color: #E89C6C;
+    border: 1px black solid;
+    padding: 20px;
+    width: 700px
+}
+
+aside {
+	background-color: #FFE2B8;
+    border: 1px black solid;
+    padding: 20px;
+    width: 700px;
+}
+
+#two_column {
+	background-color: #FFB7CF;
+	border: 1px black solid;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+#left {
+	background-color: #E582A2;
+	border: 1px black solid;
+	padding: 20px;
+	float: left;
+	width: 42%;
+}
+
+#right {
+	background-color: #E55B88;
+	border: 1px black solid;
+	padding: 20px;
+	float: right;
+	width: 42%;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+footer {
+	background-color: #FF957E;
+    border: 1px black solid;
+    padding: 20px;
+}
