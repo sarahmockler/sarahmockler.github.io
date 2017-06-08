@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass:400,700,900|Roboto:400,700');
+/*font-family: 'Roboto', sans-serif;
+font-family: 'Overpass', sans-serif;
+*/
+
+body {
+	font-size: 16px;
+	background-color: green;
+}
+
+h1, h2{
+    font-family: 'Overpass', sans-serif;
+}
+
+nav a {
+	font-weight: 700;
+	font-size: 1.5em;
+	text-decoration: none;
+	color: white;
+	display: inline-block;
+	padding: 3em 1em 3em 1em;
+	margin-right: 1em;
+}
+
+h1 {	
+    font-weight: 900;
+    font-size: 6em;
+}
+
+h2 {	
+    font-weight: 900;
+    font-size: 2.5em;
+}
+
+h3, h4, nav a, ul {	
+	font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+	font-weight: 700;
+	font-size: 2em;
+}
+
+h4 {	
+	font-weight: 400
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	line-height: 1.5em;
+	margin: 2em;
+}
+
+header {
+	width: 100%;
+	height: 10%;
+	display: block;
+	padding-bottom: 2em;
+}
+
+section {
+	background-color: pink;
+	clear: both;
+}
+
+#main-logo {
+	max-width: 15%;
+	float: left;
+	padding: 1.5em 2em 0;
+}
+
+#top-nav {
+	max-width: 40%;
+	float: right;
+}
+
+#about_page {
+	background-image: url(../images/IMG_BG_GalaxyGlitch.jpg)
+}
+
+#SUP {
+	display: block;
+	background-color: white;
+}
+
+#HEY {
+	text-align: right;
+	width: 15%;
+	display: block;
+	background-color: white;
+	padding: 3em 1em 4.5em 5em;
+	margin-left: 10%;
+	float: left;
+}
+
+#HEY_txt {
+	width: 50%;
+	display: block;
+	background-color: white;
+	padding: 3em 6em 3em 3em;
+	margin-right: 10%;
+	float: right;
+}
