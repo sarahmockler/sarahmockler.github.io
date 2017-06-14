@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio of Sarah Mockler</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body id="portfolio_page">
+	<header class="clearfix">
+		<img id="main-logo" src="images/logo_fade_white.svg" alt="Logo Image of Fading Design" title="Fading Design">
+
+		<nav id="top-nav">
+			<a href="#">PORTFOLIO</a>
+			<a href="#">ABOUT</a>
+		</nav>
+	</header>
+
+	<h2 class="w3-center" id="NBC_heading">NBC News | <span>Industry: Broadcast Television</span> </h2>
+
+	<div class="w3-content w3-display-container">
+	  <img class="mySlides" src="images/BC_iCue_ShiftingSeats.jpg" style="width:100%">
+	  <img class="mySlides" src="images/BC_iCue_StreamliningWar.jpg" style="width:100%">
+	  <img class="mySlides" src="images/BC_iCue_WomenVoters.jpg" style="width:100%">
+	  <img class="mySlides" src="images/BC_OTS_Dining.jpg" style="width:100%">
+	  <img class="mySlides" src="images/BC_iCue_AngerOverAids.jpg" style="width:100%">
+	  <img class="mySlides" src="images/BC_OTS_DangerIntersection.jpg" style="width:100%">
+	  <img class="mySlides" src="images/BC_OTS_TobaccoUse.jpg" style="width:100%">
+	  		<img class="mySlides" src="images/BC_iCue_GreatStateDebate.jpg" style="width:100%">
+	  		<img class="mySlides" src="images/BC_iCue_MuslimsinAmerica.jpg" style="width:100%">
+	  		<img class="mySlides" src="images/BC_OTS_SchoolsRace.jpg" style="width:100%">
+	  		<img class="mySlides" src="images/BC_OTS_Counterfeiting.jpg" style="width:100%">
+	  		<img class="mySlides" src="images/BC_OTS_RealFakeTrees.jpg" style="width:100%">
+	  		<img class="mySlides" src="images/BC_OTS_FarmSubsidies.jpg" style="width:100%">
+	  		<img class="mySlides" src="images/BC_Web_Hulu2.png" style="width:100%">
+
+
+
+	  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+	  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+	</div>
+
+	<script>
+	var slideIndex = 1;
+	showDivs(slideIndex);
+
+	function plusDivs(n) {
+	  showDivs(slideIndex += n);
+	}
+
+	function showDivs(n) {
+	  var i;
+	  var x = document.getElementsByClassName("mySlides");
+	  if (n > x.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = x.length}
+	  for (i = 0; i < x.length; i++) {
+	     x[i].style.display = "none";  
+	  }
+	  x[slideIndex-1].style.display = "block";  
+	}
+	</script>
+
+		<!-- <h2 class="w3-center">Bell Helicopter | Industry: Aviation</h2>
+
+		<div class="w3-content w3-display-container">
+		  <img class="mySlides" src="images/Bell_HueyPoster.jpg" style="width:85%">
+		  <img class="mySlides" src="images/Bell_CompliancePoster.jpg" style="width:85%">
+		  <img class="mySlides" src="images/Bell_Airshow.jpg" style="width:85%">
+		  <img class="mySlides" src="images/Bell_PlatinumWellatBell.jpg" style="width:85%">
+		  <img class="mySlides" src="images/Bell_Cowtown.jpg" style="width:85%">
+		  <img class="mySlides" src="images/Bell_ChiliCookOff.jpg" style="width:85%">
+		  <img class="mySlides" src="images/Bell_BloodDrive.jpg" style="width:85%"> -->
+
+</body>
+</html>
