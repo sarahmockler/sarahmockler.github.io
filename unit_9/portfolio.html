@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio of Sarah Mockler</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+
+<body id="portfolio_page">
+	<header class="clearfix">
+		<a href="index.html"><img id="main-logo" src="images/logo_fade_white.svg" alt="Logo Image of Fading Design" title="Fading Design"></a>
+
+		<nav id="top-nav">
+			<a href="portfolio.html">PORTFOLIO</a>
+			<a href="about.html">ABOUT</a>
+		</nav>
+	</header>
+
+<section id="one">
+	<div class="heading_container">
+	<h2 class="slideshow_heading">NBC News | <span>Industry: Broadcast Television</span> </h2>
+</div>
+
+<div class="slideshow-container" id="NBC_work">
+
+	<div class="mySlides fade">
+	  <div class="numbertext">1 / 3</div>
+	  <img src="images/BC_iCue_ShiftingSeats.jpg" style="width:100%">
+	  <!-- <div class="text">News Story Graphic</div> -->
+	</div>
+
+	<div class="mySlides fade">
+	  <div class="numbertext">2 / 3</div>
+	  <img src="images/BC_iCue_StreamliningWar.jpg" style="width:100%">
+	  <!-- <div class="text">Caption Two</div> -->
+	</div>
+
+	<div class="mySlides fade">
+	  <div class="numbertext">3 / 3</div>
+	  <img src="images/BC_iCue_WomenVoters.jpg" style="width:100%">
+	  <!-- <div class="text">Caption Three</div> -->
+	</div>
+
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+	<br>
+
+	<div style="text-align:center">
+	  <span class="dot" onclick="currentSlide(1)"></span> 
+	  <span class="dot" onclick="currentSlide(2)"></span> 
+	  <span class="dot" onclick="currentSlide(3)"></span> 
+	</div>
+</section>
+
+<section id="two">
+	<div class="heading_container">
+	<h2 class="slideshow_heading">Bell Helicopter | <span>Industry: Aviation</span> </h2>
+</div>
+	
+
+<div class="slideshow-container" id="Bell_work">
+
+	<div class="mySlides-two fade">
+	  <div class="numbertext">1 / 3</div>
+	  <img src="images/Bell_HueyPoster.jpg" style="width:100%">
+	  <!-- <div class="text">News Story Graphic</div> -->
+	</div>
+
+	<div class="mySlides-two fade">
+	  <div class="numbertext">2 / 3</div>
+	  <img src="images/Bell_Airshow.jpg" style="width:100%">
+	  <!-- <div class="text">Caption Two</div> -->
+	</div>
+
+	<div class="mySlides-two fade">
+	  <div class="numbertext">3 / 3</div>
+	  <img src="images/Bell_Cowtown.jpg" style="width:100%">
+	  <!-- <div class="text">Caption Three</div> -->
+	</div>
+
+	<a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides1(1)">&#10095;</a>
+
+</div>
+	<br>
+
+	<div style="text-align:center">
+	  <span class="dot-two" onclick="currentSlide(1)"></span> 
+	  <span class="dot-two" onclick="currentSlide(2)"></span> 
+	  <span class="dot-two" onclick="currentSlide(3)"></span> 
+	</div>
+</section>
+
+
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+var slideIndex1 = 1;
+showSlides1(slideIndex1);
+
+function plusSlides1(n) {
+  showSlides1(slideIndex1 += n);
+}
+
+function currentSlide1(n) {
+  showSlides1(slideIndex1 = n);
+}
+
+function showSlides1(n) {
+  var i;
+  var slides1 = document.getElementsByClassName("mySlides-two");
+  var dots1 = document.getElementsByClassName("dot-two");
+  if (n > slides1.length) {slideIndex1 = 1}    
+  if (n < 1) {slideIndex1 = slides1.length}
+  for (i = 0; i < slides1.length; i++) {
+      slides1[i].style.display = "none";  
+  }
+  for (i = 0; i < dots1.length; i++) {
+      dots1[i].className = dots1[i].className.replace(" active", "");
+  }
+  slides1[slideIndex1-1].style.display = "block";  
+  console.log(dots1);
+  dots1[slideIndex1-1].className += " active";
+}
+</script>
+
+</body>
+</html>
