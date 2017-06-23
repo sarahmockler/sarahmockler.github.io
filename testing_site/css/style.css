@@ -51,7 +51,7 @@ p {
 	font-family: 'Roboto', sans-serif;
 	font-size: 1em;
 	line-height: 1.5em;
-	color: #604553;
+	color: #233826;
 	/*margin: 2em;*/
 }
 
@@ -65,7 +65,7 @@ ul {
 span {
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
-  letter-spacing: .10em;
+  /*letter-spacing: .10em;*/
   font-size: .7em;
   /*display: block;*/
   /*background: rgba(100,150,150,.5);*/
@@ -85,7 +85,7 @@ section {
 }
 
 footer {
-	background-color: #160914;
+	background-color: #0d130e;
     padding: .75%;
     display: block;
     text-align: center;
@@ -101,7 +101,7 @@ footer {
 }
 
 #main-logo {
-	width: 150px;
+	width: 180px;
 	float: left;
 	padding: 1.5em;
 }
@@ -114,7 +114,6 @@ footer {
 #button {
 	display: block;
 	text-align: center;
-	
 }
 
 #see_my_work {
@@ -154,17 +153,83 @@ video {
    opacity: .5;
 }
 
-#portfolio_page {
-	background-image: url(../images/IMG_BG_Newsroom.jpg)
+
+.contain {
+	max-width: 75%;
+	text-align:center;
 }
 
-.w3-content {
-	max-width: 1080px;
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
 }
 
-#NBC_heading {
+.heading_container {
+	display: block;
+	text-align: center;
+	margin: auto;
+	padding-bottom: 3em;
+}
+
+
+/*#portfolio_page {
+	background-image: url(../images/IMG_BG_Newsroom.jpg);
+}*/
+#portfolio_page header {
+	position: fixed;
+}
+
+.sho-link {
+	text-decoration: none;
+	color: #363636;
+}
+
+
+#shogun {
+	display: block;
+	text-align: center;
+	height: 10%;
+	font-size: 2em;
+	float: left;
+	position:absolute;
+  	top:50%;
+  	margin: 0 auto;
+  	left: 0;
+  	right: 0;
+}
+
+#one {
+	background-image: url(../images/IMG_BG_Newsroom.jpg);
+	min-height: 100vh;
+	padding: 150px;
+}
+
+#two {
+	background-image: url(../images/IMG_BG_Mountains.jpg);
+	min-height: 100vh;
+	padding-top: 150px;
+}
+
+#three {
+	background-image: url(../images/IMG_BG_WTAMU.jpg);
+	min-height: 100vh;
+	padding-top: 150px;
+}
+
+.slideshow_heading {
 	color: white;
-	vertical-align:middle;
+}
+
+#NBC_work {
+	display: block;
+}
+
+#Bell_work {
+	display: block;
 }
 
 #about_page {
@@ -181,7 +246,7 @@ video {
 
 #HEY {
 	text-align: right;
-	width: 20%;
+	width: 28%;
 	display: block;
 	background-color: white;
 	padding: 3.7em 2em 3.7em 6em;
@@ -189,7 +254,7 @@ video {
 }
 
 #HEY_txt {
-	width: 60%;
+	width: 70.5%;
 	display: block;
 	background-color: white;
 	padding: 2.3em 6.1em 2.3em 2.5em;
@@ -207,31 +272,27 @@ video {
 	margin-top: .5%;
 }
 
-.contain {
-	max-width: 75%;
-	text-align:center;
-}
 
 #services_heading {
-	color: #eb587f;
+	color: #74f9ac;
 	padding: .7em .5em .5em .5em;
 }
 
 #contact_heading {
-	color: #fba3cf;
+	color: #b0f77b;
 	padding: .7em .5em .5em .5em;
 }
 
 #left {
 	width: 49%;
-	background-color: rgba(55,25,35,.9);
+	background-color: rgba(59,76,61,.9);
 	float:left;
 	margin-right: .25%;
 }
 
 #right {
 	width: 49.5%;
-	background-color: #27131d;
+	background-color: #1a2b1a;
 	float:left;
 	vertical-align: top;
 	margin-left: .25%;
@@ -285,18 +346,106 @@ video {
 	font-weight: 100;
 	font-size: 1.4em;
 	line-height: 2.7em;
-	color: #fe77ac;
+	color: #cff1cf;
 	text-align: left;
 }
 
-.clearfix:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;margin:0}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1080px;
+  position: relative;
+  margin: auto;
 }
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
 
 @media only screen and (max-width: 1024px) {
 	#index_page img {

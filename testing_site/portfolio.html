@@ -3,12 +3,20 @@
 <head>
 	<title>Portfolio of Sarah Mockler</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
+
 <body id="portfolio_page">
 	<header class="clearfix">
 		<a href="index.html"><img id="main-logo" src="images/logo_fade_white.svg" alt="Logo Image of Fading Design" title="Fading Design"></a>
+
+		<div id="shogun">
+			<a class="sho-link" href="#one">&#9751;</a>
+			<a class="sho-link" href="#two">&#9750;</a>
+			<a class="sho-link" href="#three">&#9750;</a>
+		</div>
 
 		<nav id="top-nav">
 			<a href="portfolio.html">PORTFOLIO</a>
@@ -16,60 +24,189 @@
 		</nav>
 	</header>
 
-	<h2 class="w3-center" id="NBC_heading">NBC News | <span>Industry: Broadcast Television</span> </h2>
-
-	<div class="w3-content w3-display-container">
-	  <img class="mySlides" src="images/BC_iCue_ShiftingSeats.jpg" style="width:100%">
-	  <img class="mySlides" src="images/BC_iCue_StreamliningWar.jpg" style="width:100%">
-	  <img class="mySlides" src="images/BC_iCue_WomenVoters.jpg" style="width:100%">
-	  <img class="mySlides" src="images/BC_OTS_Dining.jpg" style="width:100%">
-	  <img class="mySlides" src="images/BC_iCue_AngerOverAids.jpg" style="width:100%">
-	  <img class="mySlides" src="images/BC_OTS_DangerIntersection.jpg" style="width:100%">
-	  <img class="mySlides" src="images/BC_OTS_TobaccoUse.jpg" style="width:100%">
-	  		<img class="mySlides" src="images/BC_iCue_GreatStateDebate.jpg" style="width:100%">
-	  		<img class="mySlides" src="images/BC_iCue_MuslimsinAmerica.jpg" style="width:100%">
-	  		<img class="mySlides" src="images/BC_OTS_SchoolsRace.jpg" style="width:100%">
-	  		<img class="mySlides" src="images/BC_OTS_Counterfeiting.jpg" style="width:100%">
-	  		<img class="mySlides" src="images/BC_OTS_RealFakeTrees.jpg" style="width:100%">
-	  		<img class="mySlides" src="images/BC_OTS_FarmSubsidies.jpg" style="width:100%">
-	  		<img class="mySlides" src="images/BC_Web_Hulu2.png" style="width:100%">
-
-
-
-	  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-	  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+<section id="one">
+	<div class="heading_container">
+	<h2 class="slideshow_heading">NBC News | <span>Industry: Broadcast Television</span> </h2>
 	</div>
 
-	<script>
-	var slideIndex = 1;
-	showDivs(slideIndex);
+	<div class="slideshow-container" id="NBC_work">
 
-	function plusDivs(n) {
-	  showDivs(slideIndex += n);
-	}
+	<div class="mySlides fade">
+	  <div class="numbertext">1 / 3</div>
+	  <img src="images/BC_iCue_ShiftingSeats.jpg" style="width:100%">
+	  <!-- <div class="text">News Story Graphic</div> -->
+	</div>
 
-	function showDivs(n) {
-	  var i;
-	  var x = document.getElementsByClassName("mySlides");
-	  if (n > x.length) {slideIndex = 1}    
-	  if (n < 1) {slideIndex = x.length}
-	  for (i = 0; i < x.length; i++) {
-	     x[i].style.display = "none";  
-	  }
-	  x[slideIndex-1].style.display = "block";  
-	}
-	</script>
+	<div class="mySlides fade">
+	  <div class="numbertext">2 / 3</div>
+	  <img src="images/BC_iCue_StreamliningWar.jpg" style="width:100%">
+	  <!-- <div class="text">Caption Two</div> -->
+	</div>
 
-		<!-- <h2 class="w3-center">Bell Helicopter | Industry: Aviation</h2>
+	<div class="mySlides fade">
+	  <div class="numbertext">3 / 3</div>
+	  <img src="images/BC_iCue_WomenVoters.jpg" style="width:100%">
+	  <!-- <div class="text">Caption Three</div> -->
+	</div>
 
-		<div class="w3-content w3-display-container">
-		  <img class="mySlides" src="images/Bell_HueyPoster.jpg" style="width:85%">
-		  <img class="mySlides" src="images/Bell_CompliancePoster.jpg" style="width:85%">
-		  <img class="mySlides" src="images/Bell_Airshow.jpg" style="width:85%">
-		  <img class="mySlides" src="images/Bell_PlatinumWellatBell.jpg" style="width:85%">
-		  <img class="mySlides" src="images/Bell_Cowtown.jpg" style="width:85%">
-		  <img class="mySlides" src="images/Bell_ChiliCookOff.jpg" style="width:85%">
-		  <img class="mySlides" src="images/Bell_BloodDrive.jpg" style="width:85%"> -->
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+	</div>
+	<br>
+
+	<div style="text-align:center">
+	  <span class="dot" onclick="currentSlide(1)"></span> 
+	  <span class="dot" onclick="currentSlide(2)"></span> 
+	  <span class="dot" onclick="currentSlide(3)"></span> 
+	</div>
+</section>
+
+<!-- // ================================== -->
+
+<section id="two">
+	<div class="heading_container">
+	<h2 class="slideshow_heading">Bell Helicopter | <span>Industry: Aviation</span> </h2>
+	</div>
+	
+
+	<div class="slideshow-container" id="Bell_work">
+
+	<div class="mySlides-two fade">
+	  <div class="numbertext">1 / 3</div>
+	  <img src="images/Bell_HueyPoster.jpg" style="width:100%">
+	  <!-- <div class="text">News Story Graphic</div> -->
+	</div>
+
+	<div class="mySlides-two fade">
+	  <div class="numbertext">2 / 3</div>
+	  <img src="images/Bell_Airshow.png" style="width:100%">
+	  <!-- <div class="text">Caption Two</div> -->
+	</div>
+
+	<div class="mySlides-two fade">
+	  <div class="numbertext">3 / 3</div>
+	  <img src="images/Bell_Cowtown.png" style="width:100%">
+	  <!-- <div class="text">Caption Three</div> -->
+	</div>
+
+	<a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides1(1)">&#10095;</a>
+
+	</div>
+	<br>
+
+	<div style="text-align:center">
+	  <span class="dot1" onclick="currentSlide(1)"></span> 
+	  <span class="dot1" onclick="currentSlide(2)"></span> 
+	  <span class="dot1" onclick="currentSlide(3)"></span> 
+	</div>
+</section>
+
+<!-- // ================================== -->
+
+<section id="three">
+	<div class="heading_container">
+	<h2 class="slideshow_heading">School Work | <span>Learning</span> </h2>
+	</div>
+
+	<div class="slideshow-container" id="School_Work">
+
+	<div class="mySlides-three fade">
+	  <div class="numbertext">1 / 3</div>
+	  <img src="images/School_Series1.png" style="width:100%">
+	  <!-- <div class="text">News Story Graphic</div> -->
+	</div>
+
+	<div class="mySlides-three fade">
+	  <div class="numbertext">2 / 3</div>
+	  <img src="images/School_Series2.png" style="width:100%">
+	  <!-- <div class="text">Caption Two</div> -->
+	</div>
+
+	<div class="mySlides-three fade">
+	  <div class="numbertext">3 / 3</div>
+	  <img src="images/School_Series3.png" style="width:100%">
+	  <!-- <div class="text">Caption Three</div> -->
+	</div>
+
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+	</div>
+	<br>
+
+	<div style="text-align:center">
+	  <span class="dot2" onclick="currentSlide(1)"></span> 
+	  <span class="dot2" onclick="currentSlide(2)"></span> 
+	  <span class="dot2" onclick="currentSlide(3)"></span> 
+	</div>
+</section>
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+// ==================================
+
+var slideIndex1 = 1;
+showSlides1(slideIndex1);
+
+function plusSlides1(n) {
+  showSlides1(slideIndex1 += n);
+}
+
+function currentSlide1(n) {
+  showSlides1(slideIndex1 = n);
+}
+
+function showSlides1(n) {
+  var i;
+  var slides1 = document.getElementsByClassName("mySlides-two");
+  var dots1 = document.getElementsByClassName("dot1");
+  if (n > slides1.length) {slideIndex1 = 1}    
+  if (n < 1) {slideIndex1 = slides1.length}
+  for (i = 0; i < slides1.length; i++) {
+      slides1[i].style.display = "none";  
+  }
+  for (i = 0; i < dots1.length; i++) {
+      dots1[i].className = dots1[i].className.replace(" active", "");
+  }
+  slides1[slideIndex1-1].style.display = "block";  
+  console.log(dots1);
+  dots1[slideIndex1-1].className += " active";
+}
+
+// ==================================
+
+
+
+</script>
 
 </body>
 </html>
